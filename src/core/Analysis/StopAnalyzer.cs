@@ -131,7 +131,7 @@ namespace Lucene.Net.Analysis
 		static StopAnalyzer()
 		{
 			{
-				var stopWords = new System.String[]{"a", "an", "and", "are", "as", "at", "be", "but", "by", "for", "if", "in", "into", "is", "it", "no", "not", "of", "on", "or", "such", "that", "the", "their", "then", "there", "these", "they", "this", "to", "was", "will", "with"};
+				var stopWords = new System.String[]{ };
 				var stopSet = new CharArraySet(stopWords.Length, false);
 				stopSet.AddAll(stopWords);
 				ENGLISH_STOP_WORDS_SET = CharArraySet.UnmodifiableSet(stopSet);
